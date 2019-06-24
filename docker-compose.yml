@@ -1,0 +1,6 @@
+version: "3.2"
+services:
+  postgres:
+    image: postgres:10.8
+    volumes:
+      - ./postgres-entrypoint:/docker-entrypoint-initdb.d
